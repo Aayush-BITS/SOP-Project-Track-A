@@ -26,6 +26,7 @@ python3 extract_features.py | tee extract_output.txt
 - extract_features.py: groups packets into flows, computes features
 - flow_features.csv, extract_output.txt: extracted features
 - *.pcap, *.log: raw captures and iperf3/ping logs
+- screenshots: Wireshark Conversations views of udp.pcap (they confirm the script's flow counts)
 
 ## AI tool use
 Used Claude for guidance on setup, script writing and debugging. I ran and checked all commands myself.
