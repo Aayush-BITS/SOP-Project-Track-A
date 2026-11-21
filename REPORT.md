@@ -30,7 +30,6 @@ The mean TCP packet size of 43,560 bytes is impossible for Ethernet, where packe
 Other limits: each result comes from a single run on one machine with no repetition, WSL2 adds timing noise, and the throughput numbers mostly reflect my rate caps, not the link's capacity.
 
 ## 5. Where I got stuck and how I fixed it
-- WSL install failed with error `0x80072eff` (download reset).
 - I mistyped package and service names (`openswitch-switch`, `openvswitch-witch`), so install and start failed. Fixed by copy-pasting the commands.
 - I saved the script as `topo_capture,py` (a comma), so Python could not find it. Fixed with `mv`.
 - The first TCP capture was 6.5 GB because Mininet links are not throttled (about 30 Gbit/s). I deleted it and recaptured with snaplen 96 and a 100 Mbit/s cap.
